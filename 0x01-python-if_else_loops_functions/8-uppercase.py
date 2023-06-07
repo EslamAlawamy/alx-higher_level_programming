@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 def uppercase(str):
-    return (True)
+    for n in str:
+        print("{:c}".format(ord(c) - 32))
