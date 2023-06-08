@@ -9,6 +9,6 @@ if __name__ == "__main__":
         for i in range(1, count + 1):
             print("{:d}: {}".format(i, sys.argv[i]))
     else:
-        print(count, "argument:")
+        print(count, "arguments:")
         for i in range(1, count + 1):
             print("{:d}: {}".format(i, sys.argv[i]))
