@@ -6,10 +6,11 @@
  */
 void print_python_list_info(PyObject *p)
 {
-	int i = 0, list_len = 0;
-	PyObject *item;
-	PyListObject *clone = (PyListObject *) p;
+	long int l_size;
+	int i;
+	PyListObject *l_obj;
 
-	list_len = Py_SIZE(p);
-	printf("[*] Size of the Python List = %d\n", list_len);
+	l_size = PyList_Size(p);
+	l_obj = (PyListObject *)p;
+	printf("[*] Size of the Python List = %li\n", l_size);
 }
