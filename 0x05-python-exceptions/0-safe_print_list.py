@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
     try:
         for i in my_list:
             if copy < x:
-                print("{x}".format(my_list[copy]), end="")
+                print("{:d}".format(my_list[copy]), end="")
                 copy += 1
         print()
     except (TypeError):
