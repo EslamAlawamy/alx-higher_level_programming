@@ -8,7 +8,7 @@ class Square:
         """
         init function to initialize the square
 
-        Args: 
+        Args:
         size (int): the size of square
         """
         self.__size = size
