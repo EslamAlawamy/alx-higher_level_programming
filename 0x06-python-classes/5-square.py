@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" the main module """
+
+
 class Square:
     def __init__(self, size=0):
         """
