@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" the module """
 class MagicClass:
-    """ the class """
     def __init__(self, radius):
         if type(radius) is not (int, float):
             raise TypeError('radius must be a number')
