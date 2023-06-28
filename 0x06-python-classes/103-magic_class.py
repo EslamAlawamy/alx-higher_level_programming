@@ -3,7 +3,9 @@ import math
 
 
 class MagicClass:
+    """ the class  """
     def __init__(self, radius):
+        """ Args: is radius"""
         self.__radius = 0
         if type(radius) is not (int, float):
             raise TypeError('radius must be a number')
