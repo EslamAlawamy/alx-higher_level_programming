@@ -8,11 +8,12 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
+    @property
     def width(self):
         """ width getter of rectangle"""
         return self.__width
 
-
+    @width.setter
     def width(self, value):
         """ width setter pf rectangle """
         if type(value) is not (int):
