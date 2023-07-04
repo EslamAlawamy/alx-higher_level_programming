@@ -1,0 +1,25 @@
+the 0-add_integer test file
+===============================
+import-module 0-add_integer.txt
+===============================
+>>> add_integer = __import__("0-add_integer").add_integer
+
+===============================
+test cases
+===============================
+positive int
+---------------
+>>> add_integer(2, 6)
+8
+
+negative int
+---------------
+>>> add_integer(-2, -6)
+-8
+
+positive with negative
+---------------
+>>> add_integer(2, -6)
+-4
+
+
