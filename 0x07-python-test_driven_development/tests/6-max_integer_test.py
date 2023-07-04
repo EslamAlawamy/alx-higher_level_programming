@@ -19,4 +19,5 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_one_element(self):
         """ one element """
-        self.assertEqual(max_intger([69,]), 69)
+        one_element = [69]
+        self.assertEqual(max_intger(one_element), 69)
