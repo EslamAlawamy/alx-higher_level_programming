@@ -10,3 +10,5 @@ class TestMaxInteger(unittest.TestCase):
     def test_empty_list(self):
         """ check if it's none """
         self.assertIsNone(max_integer([]), "the result should be None")
+
+    def test_
