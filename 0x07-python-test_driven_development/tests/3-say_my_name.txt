@@ -1,0 +1,36 @@
+3-say_my_name
+======================
+
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+first_name not string:
+>>> say_my_name(1 , "Esalm")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 11, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+
+last_name not string:
+>>> say_my_name("e", 69)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 13, in say_my_name
+    raise TypeError("last_name must be a string")
+TypeError: last_name must be a string
+
+1 not string arg:
+>>> say_my_name(69)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 11, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+
+1 string arg:
+>>> say_my_name("eslam")
+My name is eslam 
+
+2 string args:
+>>> say_my_name("eslam", "alawamy")
+My name is eslam alawamy
