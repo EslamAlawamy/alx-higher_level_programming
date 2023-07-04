@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" String representation """
+""" Eval is magic """
 
 
 class Rectangle:
