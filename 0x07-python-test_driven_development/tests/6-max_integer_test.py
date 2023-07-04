@@ -19,5 +19,29 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_one_element(self):
         """ one element """
-        one_element = [69]
-        self.assertEqual(max_intger(one_element), 69)
+        self.assertEqual(max_integer([69]), 69)
+
+    def test_positive_list(self):
+        """ positive list """
+        self.assertEqual(max_integer([50, 60, 90, 100]), 100)
+
+    def test_negative_list(self):
+        """ negative list"""
+        self.assertEqual(max_integer([-50, -100, -500, -25]), -25)
+
+    def test_mixed_numbers(self):
+        """ mixed numbers """
+        self.assertEqual(max_integer([50, 60, -50, -15]), 60)
+
+    def test_zero(self):
+        """ zero """
+        self.assertEqual(max_integer([0, 0, 0, 0]), 0)
+
+    def test_float_number(self):
+        """ float num """
+        self.assertEqual(max_integer([1.5, 15.2, 20.3, 60.9]), 60.9)
+
+    def test_int_with_float(self):
+        """ int with float """
+        self.assertEqual(max_integer([15, 70.5, 50, 18.8]), 70.5)
+
