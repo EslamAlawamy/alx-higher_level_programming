@@ -16,3 +16,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_repeted_number(self):
         """ repeated number """
         self.assertEqual(max_integer([369, 369, 369, 369]), 369)
+
+    def test_one_element(self):
+        """ one element """
+        self.assertEqual(max_intger([69]), 69)
