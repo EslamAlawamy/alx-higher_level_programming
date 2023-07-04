@@ -52,5 +52,5 @@ class Rectangle:
         return ((self.__width * "#" + "\n") * (self.__height - 1)
                 + (self.__width * "#"))
 
-    def __reper__(self):
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+    def __repr__(self):
+        return f"Rectangle({self.__width}, {self.__height})"
