@@ -8,7 +8,6 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
     """ test max intger class """
 
-
     def test_empty_list(self):
         """ check if it's none """
         self.assertEqual(max_integer([]), None)
@@ -44,4 +43,3 @@ class TestMaxInteger(unittest.TestCase):
     def test_int_with_float(self):
         """ int with float """
         self.assertEqual(max_integer([15, 70.5, 50, 18.8]), 70.5)
-
