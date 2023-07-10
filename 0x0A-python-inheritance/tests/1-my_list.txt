@@ -72,3 +72,12 @@ check printable string
 >>> my_list.append(5)
 >>> print(my_list)
 [5]
+
+
+>>> my_list = (1, 2)
+>>> print(my_list)
+(1, 2)
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'print_sorted'
