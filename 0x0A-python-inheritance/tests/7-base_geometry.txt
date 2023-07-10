@@ -114,7 +114,13 @@ Traceback (most recent call last):
 TypeError: Esla must be an integer
 
 
-
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("Esla", None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/root/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 19, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: Esla must be an integer
 
 
 >>> bg = BaseGeometry()
