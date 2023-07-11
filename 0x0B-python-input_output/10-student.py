@@ -14,4 +14,5 @@ class Student:
         """ that retrieves a dictionary representation of a Student """
         if attrs is None or type(attrs) is not list:
             return self.__dict__
+        
         return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
