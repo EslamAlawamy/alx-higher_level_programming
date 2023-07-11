@@ -31,7 +31,7 @@ class Student:
         Returns:
             dict: A dictionary representation of the Student instance.
         """
-        if attrs is None:
-            return self.__dict__
-        else:
-            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+        if (isinstance(attrs, list) and
+                all(isinstance(x, str) for x in attrs)):
+            return {x: getattr(self, x) for x in attrs if hasattr(self, x)}
+        return self.__dict__
