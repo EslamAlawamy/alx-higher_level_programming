@@ -5,16 +5,19 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
-    """ test base class """
-    def test_id(self):
-        """ id test func """
-        base0 = Base()
-        self.assertEqual(base0.id, 1)
-        base1 = Base()
-        self.assertEqual(base1.id, 2)
-        base2 = Base(69)
-        self.assertEqual(base2.id, 69)
-        base3 = Base(-69)
-        self.assertEqual(base3.id, -69)
-        base4 = Base(0)
-        self.assertEqual(base4.id, 0)
+        """ test base class """
+    def setUp(self):
+        """ setUp """
+        Base._Base__nb_objects = 0
+
+    def test_base_id_assigned(self):
+        """ test_base_id_assigned """
+        b = Base(10)
+        self.assertEqual(b.id, 10)
+
+    def test_base_increment_id(self):
+        """ test_base_increment_id """
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b1.id, 1)
+        self.assertEqual(b2.id, 2)
