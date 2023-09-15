@@ -12,7 +12,7 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]))
     Session = sessionmaker(bind=engine)
     session = Session()
-    state = session.query(State).filter(State.name.like('%a%')).order_by(State.id)
+    state = session.query(State).filter(State.name.like('%a%')).order_by(State.id).all()
     if state is None:
         print("Nothing")
     else:
