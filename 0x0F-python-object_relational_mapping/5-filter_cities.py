@@ -12,7 +12,7 @@ if __name__ == '__main__':
     cur = db.cursor()
     cur.execute("SELECT cities.id, cities.name, states.name \
                 FROM cities JOIN states ON cities.state_id = states.id \
-                WHERE name = %s ORDER BY cities.id ASC;", (argv[4],))
+                WHERE states.name = %s ORDER BY cities.id ASC;", (argv[4],))
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    if rows is not None:
+        print(", ".join([row[1] for row in rows]))
