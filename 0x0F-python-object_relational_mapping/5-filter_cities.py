@@ -14,5 +14,5 @@ if __name__ == '__main__':
                 FROM cities JOIN states ON cities.state_id = states.id \
                 WHERE states.name = %s ORDER BY cities.id ASC;", (argv[4],))
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    if rows is not None:
+        print(", ".join([row[1] for row in rows]))
