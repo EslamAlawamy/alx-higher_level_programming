@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ 1. Filter states """
-from sys import argv
 import MySQLdb
+from sys import argv
 
 
 if __name__ == '__main__':
