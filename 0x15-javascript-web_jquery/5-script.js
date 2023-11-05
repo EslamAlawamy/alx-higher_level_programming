@@ -1,4 +1,4 @@
 const $ = window.$;
-$('DIV#update_header').click(function () {
-  $('HEADER').text('New Header!!!');
+$('DIV#add_item').click(function () {
+  $('UL.my_list').append('<li>Item</li>');
 });
